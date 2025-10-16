@@ -1,9 +1,9 @@
 import Icon from "@/assets/Icon";
+import {Link} from 'react-router-dom'
 import {
   Box,
   Checkbox,
   HStack,
-  Link,
   Stack,
   Text,
   Textarea,
@@ -53,7 +53,7 @@ const FormData = () => {
               <Icon type="arrowdown" />
             </Box>
           </HStack>
-          <Link href="formdata-two">
+          <Link to="/formdata-two">
             <Stack
               alignItems={"center"}
               justifyContent={"center"}

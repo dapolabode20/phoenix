@@ -1,11 +1,11 @@
 import { useState } from "react";
 import Button from "@/components/Button";
+import {Link} from 'react-router-dom'
+
 import {
   Box,
-
   HStack,
   Input,
-  Link,
   Stack,
   Text,
   VStack,
@@ -201,6 +201,7 @@ const GetStarted = () => {
               height="50px"
     
             >
+             
               <Text fontSize={'20px'} fontWeight={700}>BACK</Text>
             </Box>
             <Box as={'button'}
@@ -215,8 +216,8 @@ const GetStarted = () => {
 
         <HStack fontSize="18px" fontWeight={600}>
           <Text>Already have an account?</Text>
-          <Link href="/sign-in" color="#13669D">
-            Sign in
+          <Link to="/sign-in" >
+           <Text color="#13669D">Sign in</Text> 
           </Link>
         </HStack>
 

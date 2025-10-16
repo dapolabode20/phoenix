@@ -1,9 +1,9 @@
 import Button from "@/components/Button";
+import {Link} from 'react-router-dom'
 import {
   Box,
   HStack,
   Image,
-  Link,
   Stack,
   Text,
   VStack,
@@ -67,18 +67,18 @@ const OnBoarding = () => {
       >
         <HStack gap={10}>
           {datalink.map((data, i) => (
-            <Link key={i} href={data.path} fontSize={"20px"} fontWeight={700}>
-              {data.title}
+            <Link key={i} to={data.path}>
+             <Text  fontSize={"20px"} fontWeight={700} cursor={"pointer"}>  {data.title}</Text>
             </Link>
           ))}
         </HStack>
 
         <HStack gap={10}>
-          <Link href="/getstarted">
+          <Link to="/getstarted">
             <Button onClick={() => {}} label="Get Started" variant="outline" />
           </Link>
-          <Link fontSize={"20px"} fontWeight={700}>
-            Login
+          <Link to={'sign-in'} >
+          <Text fontSize={"20px"} fontWeight={700}>Login</Text>  
           </Link>
         </HStack>
       </Stack>
@@ -101,14 +101,13 @@ const OnBoarding = () => {
             The best place to start, grow and fund your website
           </Text>
           <HStack gap={5}>
-            <Button label="GET STARTED" onClick={() => {}} variant="primary" />
-            <Link href="create-account">
+          <Link to="create-account">   <Button label="GET STARTED" onClick={() => {}} variant="primary" />  </Link>         
               <Button
                 label="GET INCORPORATED"
                 onClick={() => {}}
                 variant="outline"
               />
-            </Link>
+           
           </HStack>
         </VStack>
 
