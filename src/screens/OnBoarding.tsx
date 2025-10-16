@@ -77,7 +77,7 @@ const OnBoarding = () => {
           <Link to="/getstarted">
             <Button onClick={() => {}} label="Get Started" variant="outline" />
           </Link>
-          <Link to={'sign-in'} >
+          <Link to={'/sign-in'} >
           <Text fontSize={"20px"} fontWeight={700}>Login</Text>  
           </Link>
         </HStack>
@@ -101,7 +101,7 @@ const OnBoarding = () => {
             The best place to start, grow and fund your website
           </Text>
           <HStack gap={5}>
-          <Link to="create-account">   <Button label="GET STARTED" onClick={() => {}} variant="primary" />  </Link>         
+          <Link to="/create-account">   <Button label="GET STARTED" onClick={() => {}} variant="primary" />  </Link>         
               <Button
                 label="GET INCORPORATED"
                 onClick={() => {}}
