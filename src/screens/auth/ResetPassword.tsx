@@ -1,10 +1,10 @@
 import Button from "@/components/Button";
+import {Link} from 'react-router-dom'
 import {
   Box,
   HStack,
   Image,
   Input,
-  Link,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -30,8 +30,8 @@ const ResetPassword = () => {
           />
         </Box>
          <HStack width={'60%'} justifyContent={'space-between'}>        
-          <Link href="/sign-in" color="#13669D" fontSize={'25px'} fontWeight={500}>Return to sign in</Link>
-           <Link href="/form">
+          <Link to="/sign-in" ><Text color="#13669D" fontSize={'25px'} fontWeight={500}>Return to sign in</Text></Link>
+           <Link to="/form">
         <Button
           label="SEND"
           onClick={() => {}}

@@ -1,6 +1,7 @@
 import Button from "@/components/Button";
-import CustomInput from "@/components/input";
-import { Box, HStack, Link, Stack, Text, VStack } from "@chakra-ui/react";
+import CustomInput from "@/components/input"; 
+import {Link} from 'react-router-dom'
+import { Box, HStack,  Stack, Text, VStack } from "@chakra-ui/react";
 import { Checkbox } from "@chakra-ui/react";
 
 const CreateAccount = () => {
@@ -21,7 +22,7 @@ const CreateAccount = () => {
             <Text fontSize={"20px"} fontWeight={700} color={"#DBCECE"}>
               Already have a Phoenix Account?
             </Text>
-            <Link href="/sign-in">
+            <Link to="/sign-in">
             <Button
               onClick={() => {}}
               color="#DBCECE"

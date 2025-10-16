@@ -4,11 +4,11 @@ import {
   HStack,
   Image,
   Input,
-  Link,
   Stack,
   Text,
   VStack,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/images/97dd1cf698224af98c971bb299cc287546ffa09e.png";
 
 const SignIn = () => {
@@ -37,30 +37,29 @@ const SignIn = () => {
             placeholder="Password"
           />
         </Box>
-        <Stack alignItems={'end'} width={'100%'}>
-          <Link
-            href="/reset-password"
-            color="#13669D"
-            fontSize={"20px"}
-            fontWeight={500}
-          >
-            Forgot Your Password?
+        <Stack alignItems={"end"} width={"100%"}>
+          <Link to={"/reset-password"}>
+            <Text color="#13669D" fontSize={"20px"} fontWeight={500}>
+              Forgot Your Password?
+            </Text>
           </Link>
         </Stack>
       </VStack>
-      <VStack >
-        <Link href="/form">
-        <Button
-          paddingX={"100px"}
-          paddingY={"20px"}
-          label="SIGN IN"
-          onClick={() => {}}
-          variant="primary"
-        />
+      <VStack>
+        <Link to={'/form'}>
+          <Button
+            paddingX={"100px"}
+            paddingY={"20px"}
+            label="SIGN IN"
+            onClick={() => {}}
+            variant="primary"
+          />
         </Link>
         <HStack fontSize={20} fontWeight={400} alignItems={"center"}>
           <Text>Dont have an account? </Text>
-          <Link href="/create-account" color="#13669D">sign up now</Link>
+          <Link to="/create-account" >
+           <Text color="#13669D"> sign up now</Text>
+          </Link>
         </HStack>
       </VStack>
     </VStack>
