@@ -199,7 +199,7 @@ const GetStarted = () => {
             <Box as={'button'}
               onClick={handleBack}
               height="50px"
-              disable={currentStep === 1}
+    
             >
               <Text fontSize={'20px'} fontWeight={700}>BACK</Text>
             </Box>

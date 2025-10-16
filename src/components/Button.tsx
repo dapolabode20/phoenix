@@ -92,7 +92,6 @@ export default function Button({
     <Box
       as="button"
       onClick={onClick}
-      disabled={disable}
       width={width}
       height={height}
       borderRadius={borderRadius}
