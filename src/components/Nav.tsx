@@ -106,13 +106,18 @@ const Nav = () => {
                   Profile
                 </Menu.Item>
 
-                <Menu.Item
-                  value="export"
-                  fontSize={"20px"}
-                  paddingY={"20px"}
-                  color={"#fff"}
-                >
-                  Sign Out
+                <Menu.Item value="export">
+                  <Link
+                    fontSize={"20px"}
+                    paddingY={"20px"}
+                    color={"#fff"}
+                    href="/sign-in"
+                    textDecoration={'none'}
+                    outline={'none'}
+                    width={'100%'}
+                  >
+                    Sign Out
+                  </Link>
                 </Menu.Item>
               </Menu.Content>
             </Menu.Positioner>

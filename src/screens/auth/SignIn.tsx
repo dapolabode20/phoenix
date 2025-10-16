@@ -60,7 +60,7 @@ const SignIn = () => {
         </Link>
         <HStack fontSize={20} fontWeight={400} alignItems={"center"}>
           <Text>Dont have an account? </Text>
-          <Link color="#13669D">sign up now</Link>
+          <Link href="/create-account" color="#13669D">sign up now</Link>
         </HStack>
       </VStack>
     </VStack>
